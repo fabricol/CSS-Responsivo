@@ -4,14 +4,16 @@
     padding: 0;
     font-family: Roboto, sans-serif;
 }
-/* Nesse módulo estão sendo estudadas as possibilidades de um site responsivo para diversos dispositivos */
-/* Estão sendo estudadas as diferentes resoluções de tela, portanto com a mudança do tamanho da janela do CSS, o Titulo vai ser deslocado para o centro da tela */
+
 .container  {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
-/* Para manter o Titulo do site e o botão de busca lado a lado e centralizar */
+
+a {
+    text-decoration: none;
+}
 
 header .container {
     display: flex;
@@ -38,11 +40,25 @@ header {
 }
 
 .sobre {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,50%);
-    gap: 32px;
+    gap: 32px;   
 }
 
+.sobre h3 , h2{
+    padding-bottom: 16px;
+    border-bottom: blue 1px solid;
+    color: blue;
+    font-style: italic;
+}
+
+.sobre div {
+    padding-top: 16px;
+}
+
+.sobre img {
+    max-width: 100%;
+}
 
 
 .noticia img {
@@ -68,6 +84,34 @@ section h2 {
     grid-template-columns: repeat(4,25%);
     column-gap: 1%;
     row-gap: 5%;
+}
+
+.texto {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.noticias article {
+    padding: 1px;
+    text-decoration: none;
+}
+
+.ajuste h3{
+    padding-bottom: 8px;
+}
+
+.ajuste button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color:#119759;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 /* @media screen and (max-width:767px) {
