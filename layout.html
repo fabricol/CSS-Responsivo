@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Z-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main_projeto.css">
+    <title>Site de Noticias</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ebac News</h1>  
+            <ul class="menu">
+                <li>
+                    Sobre a loja
+                </li>
+                <li>
+                    Produtos
+                </li>
+            </ul>
+        </div>    
+    </header>
+    <div class="container conteudo">
+        <section class="destaque">
+            <article class="sobre">
+                <a href="#">
+                    <img src="//via.placeholder.com/320x320">
+                </a>
+                <a>
+                    <h3>Sobre a loja</h3>
+                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum non officia ut tenetur atque saepe molestias delectus quis perspiciatis quia est cumque incidunt vel aliquam libero tempora porro blanditiis.</div>
+                </a>
+            </article>
+        </section>
+        <section >
+            <h2>Ultimas notícias</h2>
+            <div class="noticias">
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/320x320">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam doloribus itaque nam, reiciendis repellat ut sapiente sit est corrupti quos vero distinctio exercitationem quidem tempore magnam cupiditate voluptatibus tenetur debitis?
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/320x320">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima excepturi similique voluptas ab adipisci nulla neque blanditiis placeat sed assumenda, ad cum velit at reiciendis iure expedita! Molestias, animi.
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/320x320">
+                        <h3>Lorem ipsum dolor sit</h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="//via.placeholder.com/320x320">
+                        <h3>Lorem ipsum dolor sit</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
