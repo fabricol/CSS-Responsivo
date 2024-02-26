@@ -114,76 +114,42 @@ section h2 {
     border-radius: 6px;
 }
 
-/* @media screen and (max-width:767px) {
-    .conteudo {
-        display:block;
-    } */
+@media screen and (max-width:640px) {
     /*Apenas vamos usar 90% da largura do dispositivo de 767px */
-    /* .container  {
+    .container  {
         max-width: 90%;
     }
     
-    .destaque .noticia a {
-        display: block;
-        font-size: 1em;
-    }
-    
-    .destaque .noticia img {
-        margin-right: 0;
+    .menu > li {
+        list-style: none;
+        position: relative;
+        width: 100%;
+        padding: 0;
     }
 
     .noticias {
         display:block;
-        grid-template-columns: repeat(3,32.6%);
-        column-gap: 1%;
-        row-gap: 5%;
+        padding: 0;
+        
     }
 
-    .noticias .noticia {
+    .ajuste button{
+        width: 70%;
+    }
+
+    .noticia {
         margin-bottom: 32px;
     }
 
-    aside {
-        padding-left: 0;
-    }
-
-    header div.container {
-        flex-direction: column;
-    }
-    
-    .submenu {
+    .sobre{
         display: block;
-        width: 300px;
-        position: relative;
-        border: none;
     }
-    
-    .menu {
-        display: none;
+    .noticia img {
+        width: 100%;
     }
+}
 
-    .menu > li {
-        clear: both;
-    }
-    
-    .submenu li {
-        display: block;
-        padding: 8px;
-    }
-
-    .botao-menu {
-        display:flex;
-        justify-content: center;
-        margin-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .botao-menu button {
-        padding: 8px
-    }
-} */
-
-/* @media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:641px) and (max-width:1023px) {
     .container {
         max-width: 90%;
     }
@@ -199,10 +165,12 @@ section h2 {
     .noticias {
         grid-template-columns: repeat(2,49%);
     }
-} */
-
-/* @media screen and (min-width:1024px) {
-    .botao-menu {
-        display: none;
+    .ajuste button{
+        display: block;
+        width: 100%;
     }
-}  */
+
+    .noticia img {
+        width: 100%;
+    }
+}
